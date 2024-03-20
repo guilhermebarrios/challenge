@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body class="conteudo__principal">
+        <main class="class__main"> 
+            <section class="sessao__principal">
+
+                    <textarea class="input__text" type="text" placeholder="Insere seu texto aqui..."></textarea>
+
+                
+
+                <div class="container__img__label">
+                    <img class="img__icon" src="./assents/icone_informacao.svg" alt="alerta">
+                    <label class="label__icon" for="text">Apenas letras minúsculas e sem acento.</label>
+                </div>
+                
+                <div class="container__botoes">
+
+                    <button class="btn__criptografar" onclick="btnencriptar()">Criptografar</button>
+
+                    <button class="btn__descriptografar" onclick="btndesencriptar()" >Descriptografar</button>
+                </div>
+
+                
+                
+            </section>
+
+            <div class="container__img__label__output">
+                <div class="class__resultado">
+                    <textarea class="mensagem" cols="20" rows="10" ></textarea>
+                </div>
+                
+                <div class="class__imagem__menino">
+                    <img class="img__menino" src="./assents/imagem.svg" alt="">
+                </div>
+                
+                    <span class="textos">
+                        <h1 class="titulo__msg">Nenhuma mensagem<br>encontrada</h1>
+                        <p class="prg">Digite um texto que 
+                            você deseja criptografar ou descriptografar.</p>
+                    </span>
+                    <div class="container__copiar">
+                        <button class="btb__copiar" value="copiar" type="button">Copiar</button>
+                    </div>
+            </div>
+        </main>
+
+        <script src="./app.js"></script>
+</body>
+</html>
